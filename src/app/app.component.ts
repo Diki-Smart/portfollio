@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import "animate.css"
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',

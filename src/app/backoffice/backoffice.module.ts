@@ -7,6 +7,8 @@ import { FormationsComponent } from './formations/formations.component';
 import { ExperiencesComponent } from './experiences/experiences.component';
 import { MessagesComponent } from './messages/messages.component';
 import { BackofficeRoutingModule } from './backoffice.routing';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,8 @@ import { BackofficeRoutingModule } from './backoffice.routing';
     ExperiencesComponent,
     MessagesComponent,
   ],
-  imports: [
-    BackofficeRoutingModule,
-  ],
+  imports: [CommonModule, BackofficeRoutingModule],
+  exports: [RouterModule],
   providers: [],
-  bootstrap: [HomeComponent]
 })
-export class BackofficeModule { }
+export class BackofficeModule {}

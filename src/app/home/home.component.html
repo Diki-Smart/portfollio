@@ -1,291 +1,411 @@
-
-
-  <div id='body' class="body1">
+<div id="body" class="body1">
   <!--Preloader-->
-		<!-- <div class="preloader-it">
+  <!-- <div class="preloader-it">
 			<div class="mdl-spinner mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div>
 		</div> -->
-		<!--/Preloader-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <!--/Preloader-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+    rel="stylesheet"
+  />
 
-		<!--Main Wrapper-->
-		<div class="main-wrapper ">
+  <!--Main Wrapper-->
+  <div class="main-wrapper">
+    <!--Bg Image-->
+    <div class="bg-struct bg-img"></div>
+    <!--/Bg Image-->
 
-			<!--Bg Image-->
-			<div class="bg-struct bg-img"></div>
-			<!--/Bg Image-->
+    <div class="mdl-js-layout mdl-layout--fixed-header">
+      <!--Top Header-->
 
-			<div class="mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row mdl-scroll-spy-1">
+          <!-- Title -->
+          <a href="index.html"><span class="mdl-layout-title">JD</span></a>
+          <div class="mdl-layout-spacer"></div>
+          <ul class="nav mdl-navigation mdl-layout--large-screen-only">
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#body"
+                >À propos</a
+              >
+            </li>
+            <li @fadeIn>
+              <a
+                @fadeIn
+                class="mdl-navigation__link"
+                data-scroll
+                href="#skills_sec"
+                >Copétences</a
+              >
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#education_sec"
+                >Formation</a
+              >
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#experience_sec"
+                >experiences</a
+              >
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#portfolio_sec"
+                >portfolio</a
+              >
+            </li>
+            <li>
+              <a class="mdl-navigation__link" data-scroll href="#contact_sec"
+                >contact</a
+              >
+            </li>
+          </ul>
+          <!-- Right aligned menu below button -->
+          <button
+            id="demo-menu-lower-right"
+            class="mdl-button mdl-js-button mdl-button--icon ver-more-btn"
+          >
+            <i class="material-icons">more_vert</i>
+          </button>
 
-				<!--Top Header-->
+          <ul
+            class="
+              mdl-menu mdl-menu--bottom-right
+              mdl-js-menu mdl-js-ripple-effect
+            "
+            data-mdl-for="demo-menu-lower-right"
+          >
+            <li class="mdl-menu__item">
+              <a href="#"
+                ><i class="zmdi zmdi-download font-red pr-10"></i>Téléchargez
+                mon CV</a
+              >
+            </li>
+            <li class="mdl-menu__item">
+              <a href="mailto:contact@jonathandiki.com"
+                ><i class="zmdi zmdi-email-open font-green pr-10"></i>Contact
+                Me</a
+              >
+            </li>
+            <li class="mdl-menu__item">
+              <a href="callto:33751040116"
+                ><i class="zmdi zmdi-phone font-blue pr-10"></i>+33 751 040 116
+              </a>
+            </li>
+            <li class="mdl-menu__item">
+              <a href="admin"
+                ><i class="zmdi zmdi-settings font-blue pr-20"></i>Backoffice
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <!--/Top Header-->
 
-				<header class="mdl-layout__header">
-					<div class="mdl-layout__header-row mdl-scroll-spy-1">
-						<!-- Title -->
-						<a href="index.html"><span class="mdl-layout-title">JD</span></a>
-						<div class="mdl-layout-spacer"></div>
-						<ul class="nav mdl-navigation mdl-layout--large-screen-only">
-							<li><a class="mdl-navigation__link" data-scroll href="#body">À propos</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#skills_sec">Copétences</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#education_sec">Formation</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#experience_sec">experiences</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#portfolio_sec">portfolio</a></li>
-							<li><a class="mdl-navigation__link" data-scroll href="#contact_sec">contact</a></li>
-						</ul>
-						<!-- Right aligned menu below button -->
-						<button id="demo-menu-lower-right"
-								class="mdl-button mdl-js-button mdl-button--icon ver-more-btn">
-						  <i class="material-icons">more_vert</i>
-						</button>
+      <!--Left Sidebar-->
+      <div class="mdl-layout__drawer">
+        <div class="nicescroll-bar">
+          <div class="drawer-profile-wrap">
+            <div class="candidate-img-drawer mt-25 mb-20"></div>
+            <span class="candidate-name block mb-10 text-center"
+              >Jonathan DIKIZEYIKO</span
+            >
+            <ul class="social-icons mb-30">
+              <li>
+                <a
+                  class="linkedin-link"
+                  href="https://www.linkedin.com/in/jonathan-diki/"
+                >
+                  <i id="tt3" class="zmdi zmdi-linkedin"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt3">linkedin</div>
+                </a>
+              </li>
+              <li>
+                <a class="Github-link" href="https://github.com/Diki-Smart">
+                  <i id="tt5" class="zmdi zmdi-github"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt5">Github</div>
+                </a>
+              </li>
 
-						<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
-							data-mdl-for="demo-menu-lower-right">
-							<li class="mdl-menu__item"><a href="#"><i class="zmdi zmdi-download font-red pr-10"></i>Téléchargez mon CV</a></li>
-							<li class="mdl-menu__item"><a href="mailto:contact@jonathandiki.com"><i class="zmdi zmdi-email-open font-green pr-10"></i>Contact Me</a></li>
-							<li class="mdl-menu__item"><a href="callto:33751040116"><i class="zmdi zmdi-phone  font-blue  pr-10"></i>+33 751 040 116 </a></li>
-              <li class="mdl-menu__item"><a href="admin"><i class="zmdi zmdi-settings font-blue pr-20" ></i>Backoffice </a></li>
-						</ul>
-					</div>
-				</header>
-				<!--/Top Header-->
+              <li>
+                <a class="twitter-link" href="#">
+                  <i id="tt2" class="zmdi zmdi-twitter"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt2">twitter</div>
+                </a>
+              </li>
+              <li>
+                <a class="facebook-link" href="#">
+                  <i id="tt1" class="zmdi zmdi-facebook"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt1">facebook</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mdl-scroll-spy-2">
+            <ul class="mdl-navigation">
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  data-scroll
+                  href="#body"
+                >
+                  <i class="zmdi zmdi-border-color pr-15"></i>
+                  <span class="font-capitalize">about</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  data-scroll
+                  href="#skills_sec"
+                >
+                  <i class="zmdi zmdi-cutlery pr-15"></i>
+                  <span class="font-capitalize">Mes Compétences</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  data-scroll
+                  href="#portfolio_sec"
+                >
+                  <i class="zmdi zmdi-case pr-15"></i>
+                  <span class="font-capitalize">portfolio</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  data-scroll
+                  href="#experience_sec"
+                >
+                  <i class="zmdi zmdi-shield-check pr-15"></i>
+                  <span class="font-capitalize">experience</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  data-scroll
+                  href="#education_sec"
+                >
+                  <i class="zmdi zmdi-library pr-15"></i>
+                  <span class="font-capitalize">education</span>
+                </a>
+              </li>
 
-				<!--Left Sidebar-->
-				<div class="mdl-layout__drawer">
-					<div class="nicescroll-bar">
-						<div class="drawer-profile-wrap">
-							<div class="candidate-img-drawer mt-25 mb-20"></div>
-							<span class="candidate-name block mb-10 text-center">Jonathan DIKIZEYIKO</span>
-              <ul class="social-icons mb-30">
-                <li>
-                  <a class="linkedin-link" href="https://www.linkedin.com/in/jonathan-diki/">
-                    <i id="tt3" class="zmdi zmdi-linkedin"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt3">
-                      linkedin
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep"
+                  href="javascript:void(0);"
+                  data-toggle="collapse"
+                  data-target="#blog_dr"
+                >
+                  <i class="zmdi zmdi-tag-more pr-15"></i>
+                  <span class="font-capitalize">blog</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  class="mdl-navigation__link border-top-sep border-bottom-sep"
+                  data-scroll
+                  href="#contact_sec"
+                >
+                  <i class="zmdi zmdi-email pr-15"></i>
+                  <span class="font-capitalize">contact</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="drawer-footer mt-50 mb-30 text-center">
+            <p class="font-12 mt-10"></p>
+          </div>
+        </div>
+      </div>
+      <!--/Left Sidebar-->
+
+      <!--Main Content-->
+      <div class="main-content relative">
+        <div class="container">
+          <!--About Sec-->
+          <section
+            class="
+              animated
+              flip
+              about-sec
+              mt-180 mt-sm-120
+              mb-30
+              animate__animated animate__fadeInUp
+            "
+          >
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="mdl-card mdl-shadow--2dp">
+                  <div class="row">
+                    <div class="col-md-5 col-xs-12 mb-30">
+                      <div class="candidate-img mb-35"></div>
+                      <ul class="social-icons">
+                        <li>
+                          <a
+                            class="linkedin-link"
+                            href="https://www.linkedin.com/in/jonathan-diki/"
+                          >
+                            <i id="tt3" class="zmdi zmdi-linkedin"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt3">
+                              linkedin
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            class="Github-link"
+                            href="https://github.com/Diki-Smart"
+                          >
+                            <i id="tt5" class="zmdi zmdi-github"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt5">
+                              Github
+                            </div>
+                          </a>
+                        </li>
+
+                        <li>
+                          <a class="twitter-link" href="#">
+                            <i id="tt2" class="zmdi zmdi-twitter"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt2">
+                              twitter
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a class="facebook-link" href="#">
+                            <i id="tt1" class="zmdi zmdi-facebook"></i>
+                            <div class="mdl-tooltip" data-mdl-for="tt1">
+                              facebook
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="Github-link" href="https://github.com/Diki-Smart">
-                    <i id="tt5" class="zmdi zmdi-github"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt5">
-                      Github
+                    <div class="col-md-7 col-xs-12">
+                      <div class="info-wrap">
+                        <h1>Jonathan DIKIZEYIKO</h1>
+                        <h5 class="mt-20 font-grey">
+                          Developpeur Web / En Alternance
+                        </h5>
+                        <div class="mt-30">
+                          <a
+                            id="download_cv"
+                            download="CV DIKIZEYIKO-J"
+                            class="
+                              mdl-button mdl-js-button
+                              mdl-button--raised
+                              mdl-js-ripple-effect
+                              bg-info
+                              font-white
+                              mr-10
+                            "
+                            href="assets/cv.pdf"
+                            >Telecharger mon cv</a
+                          >
+                          <a
+                            class="
+                              mdl-button mdl-js-button
+                              mdl-button--raised
+                              mdl-js-ripple-effect
+                              bg-dark
+                              font-white
+                            "
+                            href="#contact_sec"
+                            data-scroll
+                          >
+                            contact</a
+                          >
+                        </div>
+                      </div>
+                      <ul class="profile-wrap mt-50">
+                        <li>
+                          <div class="profile-title">age</div>
+                          <div class="profile-desc">25</div>
+                        </li>
+                        <li>
+                          <div class="profile-title">address</div>
+                          <div class="profile-desc">
+                            Choisy-Le-Roi, île de France, FRANCE
+                          </div>
+                        </li>
+                        <li>
+                          <div class="profile-title">email</div>
+                          <div class="profile-desc">
+                            contact@jonathandiki.com
+                          </div>
+                        </li>
+                        <li>
+                          <div class="profile-title">phone</div>
+                          <div class="profile-desc">+33 75 104 0116</div>
+                        </li>
+                        <li>
+                          <!-- <div class="profile-title">freelance</div> -->
+                          <div class="profile-desc relative">
+                            Disponible
+                            <i
+                              id="datepickopn"
+                              class="zmdi zmdi-calendar-check font-green pl-5"
+                            ></i>
+                            <div id="datepicker1" class="datepicker"></div>
+                          </div>
+                        </li>
+                      </ul>
                     </div>
-                  </a>
-                </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/About Sec-->
 
-                <li>
-                  <a class="twitter-link" href="#">
-                    <i id="tt2" class="zmdi zmdi-twitter"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt2">
-                      twitter
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="facebook-link" href="#">
-                    <i id="tt1" class="zmdi zmdi-facebook"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt1">
-                      facebook
-                    </div>
-                  </a>
-                </li>
-              </ul>
-						</div>
-						<div class="mdl-scroll-spy-2">
-							<ul class="mdl-navigation">
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#body">
-										<i class="zmdi zmdi-border-color pr-15"></i>
-										<span class="font-capitalize">about</span>
-									</a>
-								</li>
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#skills_sec">
-										<i class="zmdi zmdi-cutlery pr-15"></i>
-										<span class="font-capitalize">Mes Compétences</span>
-									</a>
-								</li>
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#portfolio_sec">
-										<i class="zmdi zmdi-case pr-15"></i>
-										<span class="font-capitalize">portfolio</span>
-									</a>
-								</li>
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#experience_sec">
-										<i class="zmdi zmdi-shield-check pr-15"></i>
-										<span class="font-capitalize">experience</span>
-									</a>
-								</li>
-								<li>
-									<a class="mdl-navigation__link border-top-sep" data-scroll href="#education_sec">
-										<i class="zmdi zmdi-library pr-15"></i>
-										<span class="font-capitalize">education</span>
-									</a>
-								</li>
+          <!--Profile Sec-->
+          <section id="references_sec" class="reference-sec sec-pad-top-sm">
+            <h2 class="mb-30" style="text-align: center">A propos de Moi</h2>
+            <div class="row">
+              <div class="col-sm-12 mb-30">
+                <!-- box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.288); -->
+                <div id="moi" class="mdl-card mdl-shadow--2dp">
+                  <div class="testimonial-carousel">
+                    <div>
+                      <p
+                        style="
+                          font-size: 3vh;
+                          font-family: 'Roboto', sans-serif;
+                          font-weight: 80;
+                          margin: 2%;
 
-								<li>
-									<a class="mdl-navigation__link border-top-sep" href="javascript:void(0);" data-toggle="collapse" data-target="#blog_dr">
-										<i class="zmdi zmdi-tag-more pr-15"></i>
-										<span class="font-capitalize">blog</span>
-									</a>
-
-								</li>
-
-
-								<li>
-									<a class="mdl-navigation__link border-top-sep border-bottom-sep" 	data-scroll  href="#contact_sec">
-										<i class="zmdi zmdi-email pr-15"></i>
-										<span class="font-capitalize">contact</span>
-									</a>
-								</li>
-							</ul>
-						</div>
-						<div class="drawer-footer mt-50 mb-30 text-center">
-							<p class="font-12 mt-10"></p>
-						</div>
-					</div>
-				</div>
-				<!--/Left Sidebar-->
-
-				<!--Main Content-->
-				<div class="main-content relative">
-					<div class="container">
-
-						<!--About Sec-->
-						<section class=" animated flip about-sec mt-180 mt-sm-120  mb-30  animate__animated animate__fadeInUp">
-							<div class="row ">
-								<div class="col-lg-12">
-									<div class="mdl-card mdl-shadow--2dp">
-										<div class="row">
-											<div class="col-md-5 col-xs-12 mb-30">
-												<div class="candidate-img mb-35"></div>
-												<ul class="social-icons">
-                          <li>
-														<a class="linkedin-link" href="https://www.linkedin.com/in/jonathan-diki/">
-															<i id="tt3" class="zmdi zmdi-linkedin"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt3">
-																linkedin
-															</div>
-														</a>
-													</li>
-													<li>
-														<a class="Github-link" href="https://github.com/Diki-Smart">
-															<i id="tt5" class="zmdi zmdi-github"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt5">
-																Github
-															</div>
-														</a>
-													</li>
-
-													<li>
-														<a class="twitter-link" href="#">
-															<i id="tt2" class="zmdi zmdi-twitter"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt2">
-																twitter
-															</div>
-														</a>
-													</li>
-                          <li>
-														<a class="facebook-link" href="#">
-															<i id="tt1" class="zmdi zmdi-facebook"></i>
-															<div class="mdl-tooltip" data-mdl-for="tt1">
-																facebook
-															</div>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<div class="col-md-7 col-xs-12 ">
-												<div class="info-wrap">
-													<h1>Jonathan DIKIZEYIKO</h1>
-													<h5 class="mt-20 font-grey">Developpeur Web / En Alternance </h5>
-													<div class="mt-30">
-														<a id="download_cv" download="CV DIKIZEYIKO-J" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-info font-white mr-10" href="assets/cv.pdf">Telecharger mon cv</a>
-														<a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect bg-dark font-white" href="#contact_sec" data-scroll> contact</a>
-													</div>
-												</div>
-												<ul class="profile-wrap mt-50">
-													<li>
-														<div class="profile-title">age</div>
-														<div class="profile-desc">25 </div>
-													</li>
-													<li>
-														<div class="profile-title">address</div>
-														<div class="profile-desc">
-														Choisy-Le-Roi, île de France, FRANCE
-														</div>
-													</li>
-													<li>
-														<div class="profile-title">email</div>
-														<div class="profile-desc">
-															contact@jonathandiki.com
-														</div>
-													</li>
-													<li>
-														<div class="profile-title">phone</div>
-														<div class="profile-desc">
-															+33 75 104 0116
-														</div>
-													</li>
-													<li>
-														<!-- <div class="profile-title">freelance</div> -->
-														<div class="profile-desc relative">Disponible
-															<i id="datepickopn" class="zmdi zmdi-calendar-check font-green pl-5"></i>
-															<div id='datepicker1' class='datepicker'></div>
-														</div>
-
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/About Sec-->
-
-            						<!--Profile Sec-->
-						<section id="references_sec" class="reference-sec sec-pad-top-sm">
-							<h2 class="mb-30" style=" text-align: center;">A propos de Moi</h2>
-							<div class="row">
-								<div class="col-sm-12 mb-30" >
-                  <!-- box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.288); -->
-									<div id="moi"
-                  class="mdl-card mdl-shadow--2dp ">
-										<div class="testimonial-carousel">
-											<div>
-												<p  style="font-size: 3vh;
-                        font-family: 'Roboto', sans-serif;
-                        font-weight: 80;
-                        margin: 2%;
-
-                        line-height: 130%;
-                        text-align: center;
-                        color: white;
-                        text-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.733);"
-                         >
-                        " Jeune etudiant Passionné d’informatique et de nouvelles technologies notamment
-                        le developpement d’applications web et mobiles. Desireux de relever de nouveaux défis,
-                         motivé pour apprendre, également rigoureuxet ponctuel, je souhaite mettre mes compétences
-                        au service de l’atteinte de vosobjectifs professionnels"</p>
-												<!-- <span class="ref-name block mb-5 mt-20">john doe</span>
+                          line-height: 130%;
+                          text-align: center;
+                          color: white;
+                          text-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.733);
+                        "
+                      >
+                        " Jeune etudiant Passionné d’informatique et de
+                        nouvelles technologies notamment le developpement
+                        d’applications web et mobiles. Desireux de relever de
+                        nouveaux défis, motivé pour apprendre, également
+                        rigoureuxet ponctuel, je souhaite mettre mes compétences
+                        au service de l’atteinte de vosobjectifs professionnels"
+                      </p>
+                      <!-- <span class="ref-name block mb-5 mt-20">john doe</span>
 												<span class="ref-desgn block">Lead Designer in Droffox</span> -->
-											</div>
-											<div>
-											</div>
-										</div>
-										<div class="clearfix"></div>
+                    </div>
+                    <div></div>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-									</div>
-								</div>
-							</div>
-
-						</section>
-
-								<!-- </div>
+          <!-- </div>
 								<div class="col-md-3 col-sm-6 col-xs-12 mb-30">
 									<div class="mdl-card mdl-shadow--2dp">
 										<i class="zmdi zmdi-format-color-text font-green profile-icon"></i>
@@ -309,114 +429,179 @@
 
 									</div>-->
 
-						<!--Skills Sec-->
-						<section id="skills_sec" class="skills-sec sec-pad-top-sm">
-							<div class="row">
-								<div class="col-sm-6 mb-30">
-									<h2 class="mb-30">Compétences</h2>
-									<div class="mdl-card mdl-shadow--2dp">
+          <!--Skills Sec-->
+          <section id="skills_sec" class="skills-sec sec-pad-top-sm">
+            <div class="row">
+              <div class="col-sm-6 mb-30">
+                <h2 class="mb-30">Compétences</h2>
+                <div class="mdl-card mdl-shadow--2dp">
+                  <img
+                    class="img-responsive"
+                    src="assets/img/fnd.jpg"
+                    alt="Image description"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/Skills Sec-->
 
-                    <img  class="img-responsive" src="assets/img/fnd.jpg"  alt="Image description" />
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/Skills Sec-->
+          <!--Education Sec-->
+          <section id="education_sec" class="education-sec sec-pad-top-sm">
+            <h2 class="mb-30">formation</h2>
+            <div class="timeline-wrap overflow-hide mb-30">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-badge bg-blue no-icon"></div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-blue
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">
+                        Responsable de projet Web/Mobile (2021)
+                      </h4>
+                      <span class="duration mb-5">2021</span>
+                      <span class="institution">
+                        Bac+3 ETNA (école des technologies numérique
+                        avancées)</span
+                      >
+                    </div>
+                  </div>
+                </li>
 
+                <li class="timeline-inverted">
+                  <div class="timeline-badge bg-green no-icon"></div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-green
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">Licence Math-Info (2020-2021)</h4>
+                      <span class="duration mb-5"> Marseille </span>
+                      <span class="institution">
+                        Bac+2 Aix-Marseille Université</span
+                      >
+                    </div>
+                  </div>
+                </li>
 
+                <li>
+                  <div class="timeline-badge bg-yellow no-icon"></div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-yellow
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">
+                        English Advanced Program - Certificat
+                      </h4>
+                      <span class="duration mb-5">2014-2015</span>
+                      <span class="institution">Cours d'anglais avancé </span>
+                    </div>
+                  </div>
+                </li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge bg-red no-icon"></div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-red
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">
+                        Baccalauréat-S Mathématique -Physique
+                      </h4>
+                      <span class="duration mb-5">2013</span>
+                      <span class="institution">Institut Gianelli</span>
+                    </div>
+                  </div>
+                </li>
+                <li class="clearfix no-float"></li>
+              </ul>
+            </div>
+          </section>
+          <!--/Education Sec-->
 
-						<!--Education Sec-->
-						<section id="education_sec" class="education-sec sec-pad-top-sm">
-							<h2 class="mb-30">formation</h2>
-							<div class="timeline-wrap overflow-hide mb-30">
-								<ul class="timeline">
-									<li>
-										<div class="timeline-badge bg-blue no-icon"></div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Responsable de projet Web/Mobile (2021)
-                         </h4>
-												<span class="duration mb-5">2021</span>
-												<span class="institution"> Bac+3  ETNA (école des technologies numérique avancées)</span>
-											</div>
-										</div>
-									</li>
+          <!--Experience Sec-->
+          <section id="experience_sec" class="experience-sec sec-pad-top-sm">
+            <h2 class="mb-30">experience</h2>
+            <div class="timeline-wrap overflow-hide mb-30">
+              <ul class="timeline">
+                <li>
+                  <div class="timeline-badge">
+                    <i class="zmdi zmdi-case font-blue"></i>
+                  </div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-blue
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">Developpeur</h4>
+                      <span class="duration mb-5">Mar 2014 - present</span>
+                      <span class="institution">Freelance</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="mt-25"></p>
+                    </div>
+                  </div>
+                </li>
 
-									<li class="timeline-inverted">
-										<div class="timeline-badge bg-green no-icon"></div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Licence Math-Info (2020-2021) </h4>
-												<span class="duration mb-5"> Marseille </span>
-												<span class="institution"> Bac+2 Aix-Marseille Université</span>
-											</div>
-										</div>
-									</li>
+                <li class="timeline-inverted">
+                  <div class="timeline-badge">
+                    <i class="zmdi zmdi-format-color-text font-green"></i>
+                  </div>
+                  <div
+                    class="
+                      timeline-panel
+                      mdl-card
+                      mdl-shadow--2dp
+                      pt-30
+                      pb-30
+                      border-top-green
+                    "
+                  >
+                    <div class="timeline-heading">
+                      <h4 class="mb-10">UI/UX Designe</h4>
+                      <span class="duration mb-5">Jul 2015 — Jul 2019</span>
+                      <span class="institution">freelance</span>
+                    </div>
+                    <div class="timeline-body">
+                      <p class="mt-25"></p>
+                    </div>
+                  </div>
+                </li>
 
-									<li>
-										<div class="timeline-badge bg-yellow no-icon"></div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-yellow">
-											<div class="timeline-heading">
-												<h4 class="mb-10">English Advanced Program - Certificat </h4>
-												<span class="duration mb-5">2014-2015</span>
-												<span class="institution">Cours d'anglais avancé  </span>
-											</div>
-										</div>
-									</li>
-									<li class="timeline-inverted">
-										<div class="timeline-badge bg-red no-icon"></div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-red">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Baccalauréat-S   Mathématique -Physique  </h4>
-												<span class="duration mb-5">2013</span>
-												<span class="institution">Institut Gianelli</span>
-											</div>
-										</div>
-									</li>
-									<li class="clearfix no-float"></li>
-								</ul>
-							</div>
-						</section>
-						<!--/Education Sec-->
-
-            						<!--Experience Sec-->
-						<section id="experience_sec" class="experience-sec sec-pad-top-sm">
-							<h2 class="mb-30">experience</h2>
-							<div class="timeline-wrap  overflow-hide mb-30">
-								<ul class="timeline">
-									<li>
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-case font-blue"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp pt-30 pb-30 border-top-blue">
-											<div class="timeline-heading">
-												<h4 class="mb-10">Developpeur</h4>
-												<span class="duration mb-5">Mar 2014 - present</span>
-												<span class="institution">Freelance</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"></p>
-											</div>
-										</div>
-									</li>
-
-									<li class="timeline-inverted">
-										<div class="timeline-badge">
-											<i class="zmdi zmdi-format-color-text font-green"></i>
-										</div>
-										<div class="timeline-panel mdl-card mdl-shadow--2dp  pt-30 pb-30 border-top-green">
-											<div class="timeline-heading">
-												<h4 class="mb-10">UI/UX Designe</h4>
-												<span class="duration mb-5">Jul 2015 — Jul 2019</span>
-												<span class="institution">freelance</span>
-											</div>
-											<div class="timeline-body">
-												<p class="mt-25"></p>
-											</div>
-										</div>
-									</li>
-
-									<!-- <li>
+                <!-- <li>
 										<div class="timeline-badge">
 											<i class="zmdi zmdi-city-alt font-yellow"></i>
 										</div>
@@ -431,257 +616,366 @@
 											</div>
 										</div>
 									</li> -->
-									<li class="clearfix no-float"></li>
-								</ul>
-							</div>
-						</section>
-						<!--/Experience Sec-->
+                <li class="clearfix no-float"></li>
+              </ul>
+            </div>
+          </section>
+          <!--/Experience Sec-->
 
-
-						<!--Portfolio Sec-->
-						<section id="portfolio_sec" class="portfolio-sec sec-pad-top-sm">
-							<div class="mb-15">
-								<h2 class="pull-left float-none-xs">portfolio</h2>
-								<div class="filter-wrap pull-right float-none-xs">
-									<!-- Portfolio Filters -->
-									<!-- <ul id="filters">
+          <!--Portfolio Sec-->
+          <section id="portfolio_sec" class="portfolio-sec sec-pad-top-sm">
+            <div class="mb-15">
+              <h2 class="pull-left float-none-xs">portfolio</h2>
+              <div class="filter-wrap pull-right float-none-xs">
+                <!-- Portfolio Filters -->
+                <!-- <ul id="filters">
 										<li><a id="all" href="#" data-filter="*" class="active">all</a></li>
 										<li><a href="#" data-filter=".branding">branding</a></li>
 										<li><a href="#" data-filter=".design">design</a></li>
 										<li><a href="#" data-filter=".photography">photo</a></li>
 										<li><a href="#" data-filter=".web">web</a></li>
 									</ul> -->
-									<!--/Portfolio Filters -->
-									<div class="clearfix"></div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="gallery-wrap mb-30">
-								<div class="portfolio-wrap project-gallery">
-									<ul id="portfolio" class="portf auto-construct  project-gallery" data-col="3">
-										<li  class="item mdl-card mdl-shadow--2dp pa-0 branding">
-											<div class="light-img-wrap mdl-card__title pa-0">
-												<img class="img-responsive" src="assets/img/gallery1.jpg"  alt="Image description" />
-												<div class="light-img-overlay"></div>
-												<span class="img-cap">Portfolio Personel</span>
-											</div>
-											<span class="bottom-links mdl-card__actions">
-												<a id="goto_box_1" href="#"><i class="zmdi zmdi-eye"></i></a>
-												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
-											</span>
-										</li>
-										<li class="item mdl-card mdl-shadow--2dp pa-0  photography">
-											<div class="light-img-wrap mdl-card__title pa-0">
-												<img class="img-responsive" src="assets/img/gallery2.jpg"  alt="Image description" />
-												<div class="light-img-overlay"></div>
-												<span class="img-cap">Meteo App</span>
-											</div>
-											<span class="bottom-links mdl-card__actions">
-												<a id="goto_box_2" href="#"><i class="zmdi zmdi-eye"></i></a>
-												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
-											</span>
-										</li>
-										<li class="item mdl-card mdl-shadow--2dp pa-0 design">
-											<div class="light-img-wrap mdl-card__title pa-0">
-												<img class="img-responsive" src="assets/img/gallery3.jpg"  alt="Image description" />
-												<div class="light-img-overlay"></div>
-												<span class="img-cap">VideoGame Blog</span>
-											</div>
-											<span class="bottom-links mdl-card__actions">
-												<a id="goto_box_3" href="#"><i class="zmdi zmdi-eye"></i></a>
-												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
-											</span>
-										</li>
-										<li class="item mdl-card mdl-shadow--2dp pa-0 web">
-											<div class="light-img-wrap mdl-card__title pa-0">
-												<img class="img-responsive" src="assets/img/gallery4.jpg"  alt="Image description" />
-												<div class="light-img-overlay"></div>
-												<span class="img-cap">Oneflow App</span>
-											</div>
-											<span class="bottom-links mdl-card__actions">
-												<a id="goto_box_4" href="#"><i class="zmdi zmdi-eye"></i></a>
-												<a href="project-detail.html"><i class="zmdi zmdi-format-subject"></i></a>
-											</span>
-										</li>
+                <!--/Portfolio Filters -->
+                <div class="clearfix"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+            <div class="gallery-wrap mb-30">
+              <div class="portfolio-wrap project-gallery">
+                <ul
+                  id="portfolio"
+                  class="portf auto-construct project-gallery"
+                  data-col="3"
+                >
+                  <li class="item mdl-card mdl-shadow--2dp pa-0 branding">
+                    <div class="light-img-wrap mdl-card__title pa-0">
+                      <img
+                        class="img-responsive"
+                        src="assets/img/gallery1.jpg"
+                        alt="Image description"
+                      />
+                      <div class="light-img-overlay"></div>
+                      <span class="img-cap">Portfolio Personel</span>
+                    </div>
+                    <span class="bottom-links mdl-card__actions">
+                      <a id="goto_box_1" href="#"
+                        ><i class="zmdi zmdi-eye"></i
+                      ></a>
+                      <a href="project-detail.html"
+                        ><i class="zmdi zmdi-format-subject"></i
+                      ></a>
+                    </span>
+                  </li>
+                  <li class="item mdl-card mdl-shadow--2dp pa-0 photography">
+                    <div class="light-img-wrap mdl-card__title pa-0">
+                      <img
+                        class="img-responsive"
+                        src="assets/img/gallery2.jpg"
+                        alt="Image description"
+                      />
+                      <div class="light-img-overlay"></div>
+                      <span class="img-cap">Meteo App</span>
+                    </div>
+                    <span class="bottom-links mdl-card__actions">
+                      <a id="goto_box_2" href="#"
+                        ><i class="zmdi zmdi-eye"></i
+                      ></a>
+                      <a href="project-detail.html"
+                        ><i class="zmdi zmdi-format-subject"></i
+                      ></a>
+                    </span>
+                  </li>
+                  <li class="item mdl-card mdl-shadow--2dp pa-0 design">
+                    <div class="light-img-wrap mdl-card__title pa-0">
+                      <img
+                        class="img-responsive"
+                        src="assets/img/gallery3.jpg"
+                        alt="Image description"
+                      />
+                      <div class="light-img-overlay"></div>
+                      <span class="img-cap">VideoGame Blog</span>
+                    </div>
+                    <span class="bottom-links mdl-card__actions">
+                      <a id="goto_box_3" href="#"
+                        ><i class="zmdi zmdi-eye"></i
+                      ></a>
+                      <a href="project-detail.html"
+                        ><i class="zmdi zmdi-format-subject"></i
+                      ></a>
+                    </span>
+                  </li>
+                  <li class="item mdl-card mdl-shadow--2dp pa-0 web">
+                    <div class="light-img-wrap mdl-card__title pa-0">
+                      <img
+                        class="img-responsive"
+                        src="assets/img/gallery4.jpg"
+                        alt="Image description"
+                      />
+                      <div class="light-img-overlay"></div>
+                      <span class="img-cap">Oneflow App</span>
+                    </div>
+                    <span class="bottom-links mdl-card__actions">
+                      <a id="goto_box_4" href="#"
+                        ><i class="zmdi zmdi-eye"></i
+                      ></a>
+                      <a href="project-detail.html"
+                        ><i class="zmdi zmdi-format-subject"></i
+                      ></a>
+                    </span>
+                  </li>
+                </ul>
+                <!-- Hidden video div -->
+                <div style="display: none" id="video1">
+                  <video
+                    class="lg-video-object lg-html5 video-js vjs-default-skin"
+                    controls
+                    preload="none"
+                  >
+                    <source src="video/video1.mp4" type="video/webm" />
+                    <source src="video/video1.webm" type="video/webm" />
+                    Your browser does not support HTML5 video.
+                  </video>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/Portfolio Sec-->
 
+          <!--Interest Sec-->
+          <section
+            id="interest_sec "
+            style="margin-top: 300px; margin-bottom: 100px"
+            class="interest-sec sec-pad-top-sm"
+          >
+            <h2 class="mb-30">Centre d'intérêt</h2>
+            <div class="row" style="text-align: center">
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30"
+                >
+                  <i class="zmdi zmdi-dribbble"></i>
+                  <span>sports</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30"
+                >
+                  <i class="zmdi zmdi-headset"></i>
+                  <span>Musique</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30"
+                >
+                  <i class="zmdi zmdi-satellite"></i>
+                  <span>Astronomie</span>
+                </div>
+              </div>
 
-
-									</ul>
-									<!-- Hidden video div -->
-									<div style="display:none;" id="video1">
-										<video class="lg-video-object lg-html5 video-js vjs-default-skin" controls preload="none">
-											<source src="video/video1.mp4" type="video/webm">
-											<source src="video/video1.webm" type="video/webm">
-											 Your browser does not support HTML5 video.
-										</video>
-									</div>
-								</div>
-							</div>
-						</section>
-						<!--/Portfolio Sec-->
-
-
-
-
-
-
-		<!--Interest Sec-->
-    <section id="interest_sec "
-    style="margin-top:300px;margin-bottom: 100px;"
-   class="interest-sec sec-pad-top-sm">
-      <h2 class="mb-30">Centre d'intérêt</h2>
-      <div class="row"   style="text-align: center ;" >
-        <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-          <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-            <i class="zmdi zmdi-dribbble"></i>
-            <span>sports</span>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-          <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-            <i class="zmdi zmdi-headset"></i>
-            <span>Musique</span>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-          <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-            <i class="zmdi zmdi-satellite"></i>
-            <span>Astronomie</span>
-          </div>
-        </div>
-
-        <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-          <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-            <i class="zmdi zmdi-audio"></i>
-            <span>Livre Audio</span>
-          </div>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
-          <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
-            <i class="zmdi zmdi-airplane"></i>
-            <span>Voyager</span>
-          </div>
-        </div>
-        <!-- <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30"
+                >
+                  <i class="zmdi zmdi-audio"></i>
+                  <span>Livre Audio</span>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30"
+                >
+                  <i class="zmdi zmdi-airplane"></i>
+                  <span>Voyager</span>
+                </div>
+              </div>
+              <!-- <div class="col-md-2 col-sm-4 col-xs-6 mb-30">
           <div class="mdl-card mdl-shadow--2dp text-center pa-20 pt-30 pb-30">
             <i class="zmdi zmdi-globe"></i>
             <span>Voyager</span>
           </div>
         </div> -->
+            </div>
+          </section>
+          <!--/Interest Sec-->
 
+          <!--Contact Sec-->
+          <section id="contact_sec" class="contact-sec sec-pad-top-sm">
+            <h2 class="mb-35">contact</h2>
+            <div class="row">
+              <div id="form_card_height" class="col-sm-7 mb-30">
+                <div
+                  class="mdl-card mdl-shadow--2dp"
+                  data-ng-controller="ContactController"
+                >
+                  <h4 class="mb-10 font-unsetcase">
+                    Hey
+                    <span data-ng-bind="formData.inputName||'There'">There</span
+                    >, happy to hear from you.
+                  </h4>
+                  <form
+                    data-ng-submit="submit(contactform, $event)"
+                    name="contactform"
+                    method="post"
+                    class="form-horizontal mb-30"
+                    role="form"
+                  >
+                    <div
+                      class="form-group"
+                      data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }"
+                    >
+                      <div
+                        class="
+                          mdl-textfield mdl-js-textfield
+                          mdl-textfield--floating-label
+                        "
+                      >
+                        <input
+                          autocomplete="off"
+                          data-ng-model="formData.inputName"
+                          class="mdl-textfield__input"
+                          type="text"
+                          id="inputName"
+                          name="inputName"
+                          required
+                        />
+                        <label class="mdl-textfield__label" for="inputName"
+                          >name*</label
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="form-group"
+                      data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }"
+                    >
+                      <div
+                        class="
+                          mdl-textfield mdl-js-textfield
+                          mdl-textfield--floating-label
+                        "
+                      >
+                        <input
+                          autocomplete="off"
+                          data-ng-model="formData.inputEmail"
+                          class="mdl-textfield__input"
+                          type="email"
+                          id="inputEmail"
+                          name="inputEmail"
+                          required
+                        />
+                        <label class="mdl-textfield__label" for="inputEmail"
+                          >email*</label
+                        >
+                      </div>
+                    </div>
+                    <div
+                      class="form-group"
+                      data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }"
+                    >
+                      <div
+                        class="
+                          mdl-textfield mdl-js-textfield
+                          mdl-textfield--floating-label
+                        "
+                      >
+                        <textarea
+                          data-ng-model="formData.inputMessage"
+                          class="mdl-textfield__input"
+                          rows="3"
+                          id="inputMessage"
+                          name="inputMessage"
+                          required
+                        ></textarea>
+                        <label class="mdl-textfield__label" for="inputMessage"
+                          >message*</label
+                        >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="align-center">
+                        <button
+                          type="submit"
+                          class="
+                            mdl-button mdl-js-button
+                            mdl-button--raised
+                            mdl-js-ripple-effect
+                            bg-blue
+                            font-white
+                          "
+                          data-ng-disabled="submitButtonDisabled"
+                        >
+                          submit
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                  <p class="block result" data-ng-class="result"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!--/Contact Sec-->
+
+          <!--Footer Sec-->
+          <footer
+            sty
+            class="footer-sec sec-pad-top-sm sec-pad-bottom text-center"
+          >
+            <h4>Merci de votre visite!</h4>
+            <p class="mt-10">jonathandiki.com</p>
+            <ul class="social-icons mt-10">
+              <li>
+                <a
+                  class="linkedin-link"
+                  href="https://www.linkedin.com/in/jonathan-diki/"
+                >
+                  <i id="tt3" class="zmdi zmdi-linkedin"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt3">linkedin</div>
+                </a>
+              </li>
+              <li>
+                <a class="Github-link" href="https://github.com/Diki-Smart">
+                  <i id="tt5" class="zmdi zmdi-github"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt5">Github</div>
+                </a>
+              </li>
+
+              <li>
+                <a class="twitter-link" href="#">
+                  <i id="tt2" class="zmdi zmdi-twitter"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt2">twitter</div>
+                </a>
+              </li>
+              <li>
+                <a class="facebook-link" href="#">
+                  <i id="tt1" class="zmdi zmdi-facebook"></i>
+                  <div class="mdl-tooltip" data-mdl-for="tt1">facebook</div>
+                </a>
+              </li>
+            </ul>
+          </footer>
+          <!--Footer Sec-->
+        </div>
       </div>
-    </section>
-    <!--/Interest Sec-->
-
-
-						<!--Contact Sec-->
-						<section id="contact_sec" class="contact-sec sec-pad-top-sm">
-							<h2 class="mb-35">contact</h2>
-							<div class="row">
-								<div id="form_card_height" class="col-sm-7 mb-30">
-									<div  class="mdl-card mdl-shadow--2dp" data-ng-controller="ContactController">
-										<h4 class="mb-10 font-unsetcase">Hey <span  data-ng-bind="formData.inputName||'There'">There</span>, happy to hear from you.</h4>
-										<form data-ng-submit="submit(contactform, $event)"  name="contactform"  method="post" class=" form-horizontal mb-30" role="form">
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<input autocomplete="off" data-ng-model="formData.inputName" class="mdl-textfield__input" type="text" id="inputName" name="inputName" required>
-													<label class="mdl-textfield__label" for="inputName">name*</label>
-												</div>
-											</div>
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<input autocomplete="off" data-ng-model="formData.inputEmail" class="mdl-textfield__input" type="email" id="inputEmail" name="inputEmail" required>
-													<label class="mdl-textfield__label" for="inputEmail">email*</label>
-												</div>
-											</div>
-											<div class="form-group" data-ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
-												<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-													<textarea
-													data-ng-model="formData.inputMessage"
-													class="mdl-textfield__input"  rows="3" id="inputMessage" name="inputMessage" required></textarea>
-													<label class="mdl-textfield__label" for="inputMessage">message*</label>
-												</div>
-											</div>
-											<div class="form-group">
-												<div class="align-center">
-													<button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect  bg-blue font-white" data-ng-disabled="submitButtonDisabled">
-														submit
-													</button>
-												</div>
-											</div>
-										</form>
-										<p class="block result" data-ng-class="result"> </p>
-									</div>
-								</div>
-
-							</div>
-						</section>
-						<!--/Contact Sec-->
-
-						<!--Footer Sec-->
-						<footer sty class="footer-sec sec-pad-top-sm sec-pad-bottom text-center">
-							<h4>Merci de votre visite!</h4>
-							<p class="mt-10"> jonathandiki.com </p>
-              <ul class="social-icons mt-10">
-                <li>
-                  <a class="linkedin-link" href="https://www.linkedin.com/in/jonathan-diki/">
-                    <i id="tt3" class="zmdi zmdi-linkedin"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt3">
-                      linkedin
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="Github-link" href="https://github.com/Diki-Smart">
-                    <i id="tt5" class="zmdi zmdi-github"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt5">
-                      Github
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a class="twitter-link" href="#">
-                    <i id="tt2" class="zmdi zmdi-twitter"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt2">
-                      twitter
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a class="facebook-link" href="#">
-                    <i id="tt1" class="zmdi zmdi-facebook"></i>
-                    <div class="mdl-tooltip" data-mdl-for="tt1">
-                      facebook
-                    </div>
-                  </a>
-                </li>
-              </ul>
-
-						</footer>
-						<!--Footer Sec-->
-					</div>
-				</div>
-				<!--/Main Content-->
-
-			</div>
-		</div>
-		<!--/Main Wrapper-->
-
+      <!--/Main Content-->
+    </div>
   </div>
+  <!--/Main Wrapper-->
+</div>
 
-	<!-- Scripts -->
-  <script src="assets/js/jquery-1.12.4.min.js"></script>
-  <script src="assets/js/angular.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery-ui.min.js"></script>
-  <script src="assets/js/material.min.js"></script>
-  <script src="assets/js/jQuery.appear.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/controllers.js"></script>
-  <script src="assets/js/smooth-scroll.js"></script>
-  <script src="assets/js/isotope.js"></script>
-  <script src="assets/js/lightgallery-all.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/froogaloop2.min.js"></script>
-  <script src="assets/js/jquery.slimscroll.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery-1.12.4.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/material.min.js"></script>
+<script src="assets/js/jQuery.appear.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/controllers.js"></script>
+<script src="assets/js/smooth-scroll.js"></script>
+<script src="assets/js/isotope.js"></script>
+<script src="assets/js/lightgallery-all.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/froogaloop2.min.js"></script>
+<script src="assets/js/jquery.slimscroll.js"></script>

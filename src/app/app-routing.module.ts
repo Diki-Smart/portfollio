@@ -8,8 +8,9 @@ const routes: Routes = [
     path: 'admin',
     loadChildren: () =>
       import('./backoffice/backoffice.module').then((m) => m.BackofficeModule),
+    data: { linkIndex: 1 },
   },
-  { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent, data: { linkIndex: 0 } },
 
   { path: '**', component: HomeComponent },
 ];

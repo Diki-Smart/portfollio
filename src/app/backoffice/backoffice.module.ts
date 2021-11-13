@@ -1,14 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
+import { BackofficeRoutingModule } from './backoffice.routing';
+import { ExperiencesComponent } from './experiences/experiences.component';
+import { FormationsComponent } from './formations/formations.component';
 import { HomeComponent } from './home/home.component';
 import { MeComponent } from './me/me.component';
-import { SkillsComponent } from './skills/skills.component';
-import { FormationsComponent } from './formations/formations.component';
-import { ExperiencesComponent } from './experiences/experiences.component';
 import { MessagesComponent } from './messages/messages.component';
-import { BackofficeRoutingModule } from './backoffice.routing';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { SkillsComponent } from './skills/skills.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +18,7 @@ import { RouterModule } from '@angular/router';
     ExperiencesComponent,
     MessagesComponent,
   ],
-  imports: [CommonModule, BackofficeRoutingModule],
+  imports: [CommonModule, RouterModule, BackofficeRoutingModule],
   exports: [RouterModule],
   providers: [],
 })
